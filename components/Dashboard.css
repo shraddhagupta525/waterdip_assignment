@@ -1,0 +1,75 @@
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.date-picker {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.date-picker input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #e9ecef;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.date-picker input:hover, 
+.date-picker input:focus {
+    background-color: #ffffff;
+    border-color: #80bdff;
+}
+
+.charts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.charts > div {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sparkline-charts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sparkline-charts > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #495057;
+}
+
+.time-series-chart, .column-chart {
+    grid-column: span 2;
+}
